@@ -3,18 +3,22 @@
 	Jaspreet Kaur
 */
 
-
-	$("#price").change(function(){
-		var price = $("#price").val();
-		var taxAmount = price + 0.13;
-		$("#tax").text("$" + taxAmount.tofixed(2));
+    
+$(function(){
+	
+	$('#price').change(function(){
+		var price = $('#price').val();
+		var taxAmount = price * 0.13;
+		$('#tax').text("$" + taxAmount.toFixed(2));
 	});
 
-	$("#add-price").click(function(){
-		console.log("jass");
-		$("#price-list").text("$" + taxAmount);
+	$('#add-price').on('click',function(){
+		$('ul#price-list').text("$" + taxAmount);
 	});
 	
+
+});
+
 
           
 
