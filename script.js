@@ -9,14 +9,12 @@ $(function(){
 	$('#price').change(function(){
 		var price = $('#price').val();
 		var taxAmount = price * 0.13;
-		$('#tax').text("$" + taxAmount.toFixed(2));
-	});
+		$('span#tax').text("$" + taxAmount.toFixed(2));
 
-	$('#add-price').on('click',function(){
-		$('ul#price-list').text("$" + taxAmount);
+		$('#add-price').click(function(){
+			$('#price-list').text("$" + taxAmount);
+		});
 	});
-	
-
 });
 
 
