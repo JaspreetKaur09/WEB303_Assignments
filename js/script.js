@@ -15,7 +15,7 @@ $(function () {
    
   xhr.onload = function (){
       if (xhr.status === 200){
-        let elm = document.getElementById("a#prospect");
+        let elm = document.getElementById("prospect");
         elm.innerHTML = xhr.responseText;
           
       }
@@ -30,7 +30,7 @@ function makeXHRCallForJSON(){
  
 xhr.onload = function (){
     if (xhr.status === 200){
-      let elm = document.getElementById("a#convert");
+      let elm = document.getElementById("convert");
       elm.innerHTML = xhr.responseText;
         
     }
@@ -45,7 +45,7 @@ function makeXHRCallForJSON(){
  
 xhr.onload = function (){
     if (xhr.status === 200){
-      let elm = document.getElementById("a#retain");
+      let elm = document.getElementById("retain");
       elm.innerHTML = xhr.responseText;
         
     }
