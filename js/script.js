@@ -21,11 +21,11 @@ $.ajax({
            let loadText = $("<h2></h2>").text("Loading team...");
            $(`div#glitch-team`).append(loadText);
     },
-    error:function(){
-        
-    }
+    error: function(){
+        alert("OOPs! Content could not be retrieved.")
+    },
 
-    complete: function (){
-
+    success: function(){
+        forEach()
     }
 })
