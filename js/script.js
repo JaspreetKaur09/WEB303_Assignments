@@ -28,4 +28,8 @@ $.ajax({
     success: function(){
         forEach()
     }
-})
+});
+
+$(function(){
+   $('').on
+});
