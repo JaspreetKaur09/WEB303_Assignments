@@ -2,6 +2,18 @@
     background-color: red;
   }
 
+  .highlight {
+    background-color: red;
+  }
   .normal {
     background-color: transparent;
+  }
+  .focus {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .selected {
+    color: green;
+    font-weight: bold;
   }
